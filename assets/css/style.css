@@ -69,16 +69,16 @@
     box-shadow: 0 .125rem .25rem rgba(0,0,0,0.075) inset;
 }
 .header{
-    position:sticky;
-    top:0;
-    z-index: 2000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 .user-img{
     width:30px;
     height: 30px;
     border-radius: 50%;
 }
- .sidebar{
+.sidebar{
     overflow: scroll;
 }
 .show-sidebar-btn{
@@ -89,7 +89,7 @@
 }
 .status-card{
     transition: 0.3s;
-    
+
 }
 .status-card:hover{
     transform: translateY(-3px);
