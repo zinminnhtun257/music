@@ -26,13 +26,13 @@
             <div class="">
 
                 <?php
-               if ($_GET){
-                   $orderCol = $_GET['order_col'];
-                   $orderType = strtoupper($_GET['order_type']);
-               }else{
-                   $orderCol = "id";
-                   $orderType = "DESC";
-               }
+                if ($_GET){
+                    $orderCol = $_GET['order_col'];
+                    $orderType = strtoupper($_GET['order_type']);
+                }else{
+                    $orderCol = "id";
+                    $orderType = "DESC";
+                }
                 foreach (fPosts($orderCol,$orderType) as $p){?>
                     <?php include "single.php"; ?>
                 <?php  } ?>
@@ -43,6 +43,11 @@
     </div>
 </div>
 <?php include_once "front_panel/footer.php"; ?>
+
+
+
+
+
 
 
 
